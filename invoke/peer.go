@@ -16,6 +16,10 @@ func init() {
 	global.Cache = LevelDBInstance()
 }
 
+func Show(name string) string {
+	return name
+}
+
 func CreatePeer(peerName, ip, port, tp, cp string) string {
 	logger.Info("CreatePeer", "peerName", peerName, "ip", ip, "port", port, "tp", tp, "cp", cp)
 	// 验证peer name 是否都是字母
