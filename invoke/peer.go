@@ -7,7 +7,7 @@ import (
 	"github.com/biwow/station/global"
 )
 
-func init() {
+func Init() {
 	global.Cache = LevelDBInstance()
 }
 func Show(name string) string {
